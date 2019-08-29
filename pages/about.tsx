@@ -1,3 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 
-export default () => <div>About</div>;
+const Title = styled.h1`
+  color: red;
+  font-size: 50px;
+`;
+
+export default () => <Title>About</Title>;
+
+// export default () => <div>About</div>;

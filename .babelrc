@@ -23,7 +23,8 @@
             "libraryName": "antd",
             "style": "css"
           }
-        ]
+        ],
+        ["styled-components", { "ssr": true }]
       ]
     },
     "production": {
@@ -35,7 +36,8 @@
             "libraryName": "antd",
             "style": "css"
           }
-        ]
+        ],
+        ["styled-components", { "ssr": true }]
       ]
     },
     "test": {

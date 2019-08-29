@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js lint
+  C:\Program Files\nodejs\node.exe C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add next: latest,
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\Itecor2017\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Itecor2017\AppData\Local\Programs\Python\Python37\;C:\Users\Itecor2017\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;D:\Program Files\MongoDB\Server\3.6\bin;C:\Users\Itecor2017\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Itecor2017\AppData\Local\Android\Sdk\platform-tools;C:\Users\Itecor2017\AppData\Roaming\npm
@@ -14,12 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: D:\code\exp\with-ant-design-app\package.json: Unexpected token } in JSON at position 371
-      at JSON.parse (<anonymous>)
-      at C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+  Error: Invalid URL
+      at module.exports.module.exports (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:71663:9)
+      at urlParts (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:31604:75)
+      at NpmRegistry.isRequestToRegistry (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:31647:19)
+      at NpmRegistry.<anonymous> (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:31679:31)
       at Generator.next (<anonymous>)
       at step (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:304:30)
-      at C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:315:13
+      at C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:322:14
+      at new Promise (<anonymous>)
+      at new F (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:5296:28)
+      at NpmRegistry.<anonymous> (C:\Users\Itecor2017\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:301:12)
 
 npm manifest: 
   {
@@ -29,8 +34,7 @@ npm manifest:
       "ewe": "nodemon server/index.ts",
       "dev": "nodemon",
       "build": "next build && tsc --project tsconfig.server.json",
-      "start": "cross-env NODE_ENV=production node dist/index.js",
-      "lint": "tslint -c ./tslint.json --exclude **/*.d.ts --exclude ./node_modules --project . --fix **/*.tsx",
+      "start": "cross-env NODE_ENV=production node dist/index.js"
     },
     "dependencies": {
       "@zeit/next-css": "^1.0.1",

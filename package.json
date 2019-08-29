@@ -1,23 +1,36 @@
 {
-  "name": "with-ant-design",
+  "name": "nextjs-boilderplate",
   "version": "1.0.0",
+  "description": "A practical and complete boilderplate powered with NextJS + TypeScript. A bundle based on PWA + SSR + GraphQL + I18N etc...",
   "scripts": {
     "dev": "next",
-    "ewe": "nodemon server/index.ts",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/index.js"
+    "start": "yarn build && cross-env NODE_ENV=production node dist/index.js",
+    "ewe": "yarn build && nodemon server/index.ts"
   },
+  "keywords": [
+    "NextJS",
+    "TypeScript",
+    "PWA",
+    "SSR",
+    "GraphQL",
+    "I18N",
+    "Styled-Components",
+    "Antd"
+  ],
+  "author": "Eric Torres Andrade <erictorresandrade.1@gmail.com>",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "antd": "^3.9.2",
     "babel-plugin-import": "^1.9.1",
+    "mime": "^2.4.4",
     "next": "latest",
+    "next-seo": "^2.0.0",
     "null-loader": "2.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "styled-components": "^4.3.2"
   },
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^12.7.2",
     "@types/react": "^16.9.2",
@@ -27,5 +40,6 @@
     "cross-env": "^5.2.0",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.2"
-  }
+  },
+  "license": "ISC"
 }

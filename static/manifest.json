@@ -1,12 +1,12 @@
 {
-  "name": "inxt",
-  "short_name": "inxt",
-  "theme_color": "#f1f1f1",
-  "background_color": "#f1f1f1",
-  "display": "browser",
+  "name": "Inxt",
+  "short_name": "Inxt",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
   "orientation": "portrait",
   "Scope": "/",
-  "start_url": ".",
+  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

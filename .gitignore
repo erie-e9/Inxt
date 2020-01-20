@@ -1,3 +1,15 @@
 node_modules
 .next
 dist
+
+**/node_modules
+**/.next
+dist
+.DS_Store
+logs
+*.log
+npm-debug.log
+pids
+*.pid
+*.seed
+build/Release

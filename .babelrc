@@ -1,17 +1,3 @@
-// {
-//   "presets": ["next/babel"],
-//   "plugins": [
-//     [
-//       "import",
-//       {
-//         "libraryName": "antd",
-//         "style": "css"
-//       }
-//     ]
-//   ]
-// }
-
-
 {
   "env": {
     "development": {
@@ -21,11 +7,20 @@
           "import",
           {
             "libraryName": "antd",
-            "style": "css"
-          }
+            "libraryDirectory": "lib",
+            "style": true // `style: true` for less
+          },
+          "ant"
         ],
-        ["styled-components", { "ssr": true }]
-      ]
+        ["styled-components", { "ssr": true }],
+        ["module-resolver", {
+          "root": ["."],
+          "alias": {
+            "styles": "static/styles"
+          }
+        }]
+      ],
+      "ignore": ["node_modules"]
     },
     "production": {
       "presets": ["next/babel"],
@@ -34,11 +29,20 @@
           "import",
           {
             "libraryName": "antd",
-            "style": "css"
-          }
+            "libraryDirectory": "lib",
+            "style": true // `style: true` for less
+          },
+          "ant"
         ],
-        ["styled-components", { "ssr": true }]
-      ]
+        ["styled-components", { "ssr": true }],
+        ["module-resolver", {
+          "root": ["."],
+          "alias": {
+            "styles": "static/styles"
+          }
+        }]
+      ],
+      "ignore": ["node_modules"]
     },
     "test": {
       "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]]

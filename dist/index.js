@@ -1,12 +1,10 @@
 "use strict";
-// @ts-ignore
 const next = require("next");
 const http2 = require("http2");
 const fs = require("fs");
 const { parse } = require("url");
 const path = require("path");
 const mime = require("mime");
-// @ts-ignore
 const port = parseInt(process.env.PORT, 10) || 3000;
 const isDev = process.env.NODE_ENV !== "production";
 const isProd = !isDev;
@@ -14,7 +12,6 @@ const ngrok = isDev && process.env.ENABLE_TUNNEL ? require("ngrok") : null;
 const customHost = process.env.HOST;
 const host = customHost || null;
 const prettyHost = customHost || "localhost";
-// Init the Next app:
 const app = next({
     isProd,
     conf: {
@@ -25,11 +22,7 @@ const serverOptions = {
     cert: fs.readFileSync(path.join(__dirname, "../server.crt")),
     key: fs.readFileSync(path.join(__dirname, "../key.pem"))
 };
-/******************* push archivos https ****************** */
-// read and send file content in the stream
-// @ts-ignore
 const sendFile = (stream, fileName) => {
-    // console.log("aqui we: /", fileName)
     const fd = fs.openSync(fileName, "r");
     const stat = fs.fstatSync(fd);
     const headers = {
@@ -38,15 +31,9 @@ const sendFile = (stream, fileName) => {
         "content-type": mime.getType(fileName)
     };
     stream.respondWithFD(fd, headers);
-    // stream.on("close", () => {
-    //   console.log("closing file", fileName);
-    //   fs.closeSync(fd);
-    // });
     stream.end();
 };
-// @ts-ignore
 const pushFile = (stream, path, fileName) => {
-    // @ts-ignore
     stream.pushStream({ ":path": path }, (err, pushStream) => {
         if (err) {
             console.log(`Error running pushStream: ${err}`);
@@ -54,23 +41,43 @@ const pushFile = (stream, path, fileName) => {
         sendFile(pushStream, fileName);
     });
 };
-/******************* /push archivos https ****************** */
-// Create the secure HTTPS server:
-// Don´t forget to create the keys for your development
 const server = http2.createSecureServer(serverOptions);
 app.prepare().then(() => {
-    // @ts-ignore
     server.on("error", err => console.error(err));
-    // Process the various routes based on `req`
-    // `/`      -> Render index.js
-    // `/about` -> Render about.js
-    // @ts-ignore
     server.on("request", (req, res) => {
         const parsedUrl = parse(req.url, true);
         const { pathname, query } = parsedUrl;
         switch (pathname) {
+            case "/":
+                return app.render(req, res, "/", query);
+                break;
+            case "/store":
+                return app.render(req, res, "/store", query);
+                break;
+            case "/blog":
+                return app.render(req, res, "/blog", query);
+                break;
             case "/about":
                 return app.render(req, res, "/about", query);
+                break;
+            case "/auth":
+                return app.render(req, res, "/auth", query);
+                break;
+            case "/contact":
+                return app.render(req, res, "/contact", query);
+                break;
+            case "private/dashboard":
+                return app.render(req, res, "private/dashboard", query);
+                break;
+            case "/apps":
+                return app.render(req, res, "/apps", query);
+                break;
+            case "/products":
+                return app.render(req, res, "private/ecommerce/products", query);
+                break;
+            case "/documents":
+                return app.render(req, res, "private/documents", query);
+                break;
             case "/robots.txt":
                 return sendFile(res.stream, path.join(__dirname, "../static/robots.txt"));
                 break;
@@ -81,7 +88,6 @@ app.prepare().then(() => {
                 return app.render(req, res, "/", query);
         }
     });
-    // @ts-ignore
     server.listen(port, host, (err) => {
         if (err) {
             console.log(`Error running app: ${err}`);
@@ -91,7 +97,6 @@ app.prepare().then(() => {
         }
     });
 })
-    // @ts-ignore
     .catch((ex) => {
     console.error(ex.stack);
     process.exit(1);

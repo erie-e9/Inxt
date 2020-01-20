@@ -1,0 +1,244 @@
+https://inxt.erictorresandrade.now.sh
+npx create-next-app --example with-typescript inxt
+
+https://codesandbox.io/s/6l1yz11nq3?from-embed
+
+powercfg.exe /h on
+
+cd inxt && yarn dev
+
+links: [
+    Miembros: https://zeit.co/now
+    https://palantir.github.io/tslint/rules/
+    static file para server no nodejs: https://platzi.com/blog/creando-sitios-estaticos-con-nextjs/
+    https://www.perimeterx.com/blog/http2/#
+    100 lighthouse next https://developers.caffeina.com/how-to-get-a-100-lighthouse-score-with-nextjs-c2fa4d35a90b
+    que es http2: https://somostechies.com/que-es-http2/
+    http2: [
+        Explicación en español: https://www.youtube.com/watch?v=Nm2CpA3wOKU
+        https://medium.com/@sibu.it13/an-example-of-server-push-with-http-2-in-node-js-22757256f0b3
+        
+    ]
+    Auto-Generate sitemap.xml in Next.js: https://dev.to/embiem/auto-generate-sitemapxml-in-nextjs-2nh1
+    The React codebase generator: https://divjoy.com/
+    Next boilerplate: https://github.com/Enalmada/next-reason-boilerplate
+    Loading https://github.com/zeit/next.js/blob/canary/examples/with-loading/pages/_app.js
+    Meta attributes: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#Attributes
+    Icon generator: https://realfavicongenerator.net
+    Apple icon generator: https://appicon.co
+    tests: [
+        Webpagetest: http://webpagetest.org/
+        PageSpeed Insights: [
+            https://developers.google.com/speed/pagespeed/insights/
+            https://developers.google.com/speed/docs/insights/v5/get-started
+        GTMetrix: https://gtmetrix.com/
+        https://validator.w3.org/
+        https://www.thinkwithgoogle.com/feature/testmysite/
+        https://www.uptrends.com/tools/website-speed-test
+        https://tools.pingdom.com/
+    ]
+    Next-Sass: https://github.com/zeit/next-plugins/tree/master/packages/next-sass
+    Media queries Sass: https://www.creativebloq.com/how-to/how-to-structure-media-queries-in-sass
+    Get started Styled-components: https://medium.com/styled-components/styled-components-getting-started-c9818acbcbbd
+    D3.js + React https://www.freecodecamp.org/news/how-to-get-started-with-d3-and-react-c7da74a5bd9f/
+    D3 en español: https://gcoch.github.io/D3-tutorial/
+    D3 gradient: https://dev.to/chooblarin/d3js-chart-with-gradient-color-4j71
+    Isometric flats illustrations: https://isoflat.com/explore-isobuild/
+    gradients generator: https://cssgradient.io/
+    CountDown React: https://www.seeleycoder.com/blog/react-countdown-timer/
+    Google analytics + R: https://www.doctormetrics.com/google-analytics-r-statistics/
+    How to set up performance and user tracking in React with Google Analytics: https://www.freecodecamp.org/news/performance-and-user-tracking-in-react-with-google-analytics/
+    Lighthouse constrast ratio issue: https://contrast-ratio.com/
+    Price tag: https://codepen.io/Magnilucent/pen/DoBtx
+    Progress Bar: https://css-tricks.com/examples/ProgressBars/
+    Nextjs + testing + Redux: https://hackernoon.com/tutorial-ssr-split-testing-and-analytics-with-react-redux-and-next-js-5392799c15c7
+    Next.config.js: https://www.youtube.com/watch?v=jK3QuqOLh10
+    Tree shaking Antd Icon: https://stackoverflow.com/questions/56911819/es6-js-tree-shaking-not-working-for-antd-lib
+    Next.js + Less: https://github.com/zeit/next.js/issues/8054
+    web de iconos svg: [
+        marcas registradas https://www.vectorlogo.zone/
+        + pakcs chidos https://www.iconfont.cn/
+            https://www.iconfont.cn/search/index?q=google%20analytics
+            https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=19169
+    ]
+
+    software de iconos svg: [
+        Nucleo
+        Inkscape
+    ]
+    Third parties API's [
+        https://www.facebook.com/business/m/whatsapp/business-api
+            Requiere dominio de web, correo de web, teléfono y nombre de la empresa!
+        https://developers.shopify.com/
+        https://analytics.google.com/analytics/web/provision/?authuser=0#/provision
+        https://www.instagram.com/developer/
+        https://developers.facebook.com/docs/instagram-api
+        https://developer.twitter.com/
+        https://developers.facebook.com/docs <[Herramientas para empresas]>
+        https://developers.google.com/youtube/v3/getting-started
+        https://dev.twitch.tv/
+        https://es.semrush.com/api-documentation/
+        DHL API: https://www.logistics.dhl/global-en/home/our-divisions/ecommerce/integration/api.html
+    ]
+
+    Tips: [
+        https://www.emprender-facil.com/es/facebook-developers/
+    ]
+    Inspiration: [
+        https://www.carambarco.com/en
+    ]
+]
+
+fonts: [
+    Montserrat
+    Proxima nova
+    Roboto
+    Lato
+    Open sans
+    SF Pro
+]
+
+yarn add styled-components next-routes next-offline graphql formik @zeit/next-typescript next-optimized-images webp-loader next-seo nprogress antd babel-plugin-import babel-plugin-inline-import @zeit/next-sass node-sass @zeit/next-css null-loader
+
+yarn add -D @types/next @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/typescript-operations @types/graphql @types/styled-components tslint tslint-config-prettier tslint-config-standard tslint-plugin-prettier @babel/core babel-jest enzyme enzyme-adapter-react-16 jest react-addons-test-utils react-test-renderer babel-plugin-styled-components @types/styled-components
+
+Imagen Webp:  D:\libwebp-0.4.2-windows-x64\bin>cwebp -q 80 item6.jpg -o item6.webp
+
+Marco teórico
+    Desconocidas:
+        next-rum:
+        next-manifest:
+        react-helmet-async:
+        mime:
+        nprogress:
+        now: Es un hosting/domainer para subir apps estaticas de manera muy sencilla, permite la posibilidad de comprar dominios por $15
+        prisma: 
+        null-loader:
+        Icon generator:
+        Next: {
+            etags:
+            @next/mdx:
+        }
+        countdown: https://www.npmjs.com/package/countdown
+        morgan:
+        D3.js
+        react-device-detect
+        react-window: https://github.com/bvaughn/react-window para renderizar de manera eficiente listas grandes y datos tabulares
+        react-ga: 
+            https://levelup.gitconnected.com/using-google-analytics-with-react-3d98d709399b
+            https://github.com/react-ga/react-ga
+            
+        Travis CI: Integración continua para mejorar la detección de posibles errores de manera automática.
+        Coveralls: Informes del porcentaje de código acotado a la hora de testear.
+        Compodoc: Crear documentación fácil de mantener y de manera automática en nuestras librerías.
+        react-intersection-observer: Lazy load package para mostrar componentes cuando están en el viewport y quitarlos cuando no lo están.
+        @svgr/cli: Convertir svg a React component.
+            script: "svg-to-jsx": "svgr < static/images/svgr/icon.svg > components/commons/svgr/icon.js --svgo-config static/svgo.json --replace-attr-values '#f8f8f8={props.color}'"
+    Conocidas:
+        Adobe XD
+        
+
+Generar icons & manifest
+    1°: https://app-manifest.firebaseapp.com/
+    2°: Desde consola, https://realfavicongenerator.net:
+    Copiar en raiz de proyecto el archivo faviconDescription.json
+    en cmd: real-favicon generate faviconDescription.json faviconData.json static/images/icons
+
+    3°: Apple Icons: https://appicon.co
+
+        {/* Apple */}
+        <link rel="apple-touch-icon" sizes="16x16" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/16.png" />
+      <link rel="apple-touch-icon" sizes="20x20" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/20.png" />
+      <link rel="apple-touch-icon" sizes="29x29" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/29.png" />
+      <link rel="apple-touch-icon" sizes="32x32" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/32.png" />
+      <link rel="apple-touch-icon" sizes="40x40" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/40.png" />
+      <link rel="apple-touch-icon" sizes="50x50" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/50.png" />
+      <link rel="apple-touch-icon" sizes="55x55" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/55.png" />
+      <link rel="apple-touch-icon" sizes="57x57" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/57.png" />
+      <link rel="apple-touch-icon" sizes="58x58" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/58.png" />
+      <link rel="apple-touch-icon" sizes="60x60" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/60.png" />
+      <link rel="apple-touch-icon" sizes="64x64" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/64.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/72.png" />
+      <link rel="apple-touch-icon" sizes="76x76" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/76.png" />
+      <link rel="apple-touch-icon" sizes="80x80" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/80.png" />
+      <link rel="apple-touch-icon" sizes="87x87" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/87.png" />
+      <link rel="apple-touch-icon" sizes="88x88" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/88.png" />
+      <link rel="apple-touch-icon" sizes="100x100" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/100.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/114.png" />
+      <link rel="apple-touch-icon" sizes="120x120" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/120.png" />
+      <link rel="apple-touch-icon" sizes="128x128" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/128.png" />
+      <link rel="apple-touch-icon" sizes="144x144" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/144.png" />
+      <link rel="apple-touch-icon" sizes="152x152" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/152.png" />
+      <link rel="apple-touch-icon" sizes="167x167" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/167.png" />
+      <link rel="apple-touch-icon" sizes="172x172" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/172.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/180.png" />
+      <link rel="apple-touch-icon" sizes="196x196" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/196.png" />
+      <link rel="apple-touch-icon" sizes="216x216" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/216.png" />
+      <link rel="apple-touch-icon" sizes="256x256" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/256.png" />
+      <link rel="apple-touch-icon" sizes="512x512" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/512.png" />
+      <link rel="apple-touch-icon" sizes="1024x1024" href="/static/images/icons/Assets.xcassets/AppIcon.appiconset/1024.png" />
+
+
+API third party: [
+    MercadoLibre:
+        funciones: [
+            CRUD de items de venta
+        ]
+    Facebook:
+        funciones: [
+        
+        ]
+    Instagram:
+        funciones: [
+            Login
+            Acceso a posts (fotos)
+        ]
+    Messenger:
+        funciones: [
+
+        ]
+    WhatsApp:
+        funciones: [
+            Mandar mensajes por whatsapp
+        ]
+    Youtube:
+        funciones: [
+
+        ]
+    Twitter:
+        funciones: [
+
+        ]
+    Skype:
+        funciones: [
+
+        ]
+    Snapchat:
+        funciones: [
+
+        ]
+    PayPal:
+        funciones: [
+
+        ]
+    Shopify:
+        funciones: [
+
+        ]
+    Amazon:
+        funciones: [
+
+        ]
+    Pinterest:
+        funciones: [
+
+        ]
+    Ebay:
+        funciones: [
+
+        ]
+    Mercadolibre:
+        funciones: [
+
+        ]
+] 

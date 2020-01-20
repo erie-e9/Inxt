@@ -1,0 +1,58 @@
+@import 
+    './item.scss'
+    ,'../../variables.scss';
+
+.countdown-wrapper {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.countdown-text {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+}
+
+.countdown-title {
+    font-family: $FONTFAMILY;
+    // font-display: fallback;
+    color: $PRIMARYTEXT;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.countdown-counter {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+}
+
+.countdown-counter div {
+    position: relative;
+    padding: 10px;
+    width: 60px;
+    margin: 0 5px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.countdown-wrapper div span{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(66, 66, 66);
+}
+
+.countdown-counter div:last-child {
+    background: #ffffff;
+}
+
+.countdown-counter div:last-child span {
+    color: #707070
+}

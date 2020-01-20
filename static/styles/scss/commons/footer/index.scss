@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5em 2em;
+    width: 100%;
+    background-color: $BACKGROUNDSECONDARY;
+}
+
+// .footer > p, span {
+//     color: #333;
+// }
+
+.footer-head-title {
+    font-family: $FONTFAMILY;
+    // font-display: fallback;
+    color: $PRIMARYTEXT;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.5;
+}

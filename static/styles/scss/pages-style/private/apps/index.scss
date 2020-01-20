@@ -1,0 +1,12 @@
+@import '../../../variables.scss';
+
+.private-apps-wrapper {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  min-height: 180px;
+  justify-content: center;
+  align-items: center;
+  background-color: $PRIMARY;
+}

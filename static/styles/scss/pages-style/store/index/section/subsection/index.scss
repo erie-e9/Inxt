@@ -1,0 +1,59 @@
+// @import 
+        // 'subsection1.scss'
+        // 'subsection2.scss'
+        // 'subsection3.scss'
+        // ;
+
+.subsection-menu {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 20px;
+    // flex: 1;
+    flex-direction: column;
+    // display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    // padding: $paddingGlobal;
+    @media only screen and (min-width: 300px) {
+        padding: 0px 20px;
+        // height: 35px;
+     }
+     @media only screen and (min-width: 350px) {
+        padding: 0px 20px;
+        // height: 35px;
+     }
+     @media only screen and (min-width: 410px) {
+        padding: 0px 20px;
+        // height: 35px;
+     }
+     @media only screen and (min-width: 640px) {
+         padding: 0px 20px;
+     }
+     @media only screen and (min-width: 740px) {
+         padding: 0px 20px;
+     }
+     @media only screen and (min-width: 800px) {
+        padding: 0px 60px;
+     }
+     @media only screen and (min-width: 1040px) {
+         padding: 0px 80px;
+     }
+}
+
+.subsection-item {
+    margin: auto 7px;
+}
+
+.subsection-slickcontent {
+    min-height: 300px;
+}
+
+.card-functions {
+    // z-index: 101;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    flex: 1;
+    flex-direction: row;
+}

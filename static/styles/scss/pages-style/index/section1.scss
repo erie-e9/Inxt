@@ -1,0 +1,85 @@
+@import '../../variables.scss';
+
+.section1SubsectionsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // min-height: 400px;
+    height: 100%;
+    background-color: rgba(230, 230, 230, 1); //$BACKGROUNDPRIMARY
+    padding: 60px 0 0;
+}
+
+.section1Sections {
+    width: 80%;
+    padding: 60px 0;
+
+    @media only screen and (min-width: 300px) {
+        padding: 65px 0;
+    }
+    @media only screen and (min-width: 350px) {
+        padding: 60px 0;
+    }
+    @media only screen and (min-width: 800px) {
+        padding: 60px 0;
+    }
+    @media only screen and (min-width: 1040px) {
+        padding: 60px 0;
+    }
+} 
+
+.containerItem {
+    margin: auto;
+    align-items: center;    
+    padding: 35px 20px;
+    width: 90%;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    background: #f3f3f3;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+.contentItem p {
+    text-align: justify;
+    font-weight: 400;
+}
+
+.wave {
+    width: 100%;
+    background-color: rgba(230, 230, 230, 1);
+    height: auto;
+}
+
+.waveimg {
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+}
+
+.section1-subsection1-icontext {
+    font-family: $FONTFAMILY;
+    color: $PRIMARYTEXT;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.section1-subsection1-contenttext {
+    font-family: $FONTFAMILY;
+    color: $PRIMARYTEXT;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}

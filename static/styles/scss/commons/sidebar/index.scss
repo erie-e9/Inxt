@@ -1,0 +1,21 @@
+.sider {
+    // background: #ffffff !important;
+    overflow-x: hidden !important;
+    height: 100vh !important;
+    position: fixed !important;
+    left: 0 !important;
+    z-index: 2 !important;
+  }
+
+.ant-tooltip-inner {
+  background-color: white;
+  color: red;
+}
+
+.ant-tooltip-placement-bottom .ant-tooltip-arrow, .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow, .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+  border-bottom-color: white;
+}
+
+.ant-tooltip-arrow::before {
+  background-color: white;
+}

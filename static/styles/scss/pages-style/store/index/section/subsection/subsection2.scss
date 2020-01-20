@@ -1,0 +1,64 @@
+@import '../../../../../variables.scss';
+
+.card-section2 {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto 5px auto 0;
+
+    .card-info {
+        display: inline-block;
+        width: 100%;
+        margin-top: 0px;
+        position: relative;
+        text-align: center;
+        z-index: 100;
+        opacity: 1;
+    }
+
+    &:hover {
+        cursor: pointer;
+        // .top {           
+        //     transform: scale(1.03); 
+        // }
+        .card-info {
+            display: inline-block;
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+}
+
+.subsection2-container {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.subsection2-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.store-subsection2-title {
+    font-family: $FONTFAMILY;
+    // font-display: fallback;
+    color: $PRIMARYTEXT;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.5;
+  }

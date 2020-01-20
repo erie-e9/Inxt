@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.contact-wrapper-centered {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  min-height: 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  font-family: $FONTFAMILY;
+  // font-display: fallback;
+  color: $PRIMARYTEXT;
+  font-size: 3rem;
+  font-weight: 500;
+  // text-align: center;
+}
+
+.contact-subtitle {
+  font-family: $FONTFAMILY;
+  color: $PRIMARYTEXT;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.5;
+}

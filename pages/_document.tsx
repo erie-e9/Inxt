@@ -1,18 +1,19 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
+// import '../static/styles/scss/commons/main/index.scss'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet();
-    const originalRenderPage = ctx.renderPage;
+    const sheet: any = new ServerStyleSheet();
+    const originalRenderPage: any = ctx.renderPage;
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App: any) => (props: any) => sheet.collectStyles(<App {...props} />),
         });
 
-      const initialProps = await Document.getInitialProps(ctx);
+      const initialProps: any = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: (
@@ -21,26 +22,16 @@ export default class MyDocument extends Document {
             {sheet.getStyleElement()}
           </>
         ),
-      }
+      };
     } finally {
       sheet.seal();
     }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
-          <style jsx global>{`
-              html,
-              body,
-              #__next {
-                height: 100%;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-          `}</style>
         </Head>
         <body>
           <Main />

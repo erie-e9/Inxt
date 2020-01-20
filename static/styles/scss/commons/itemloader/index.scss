@@ -1,0 +1,31 @@
+.loaderWrapper {
+    flex: 1;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    // background: #e6e6e6;
+}
+
+.outline {
+	width:15px; height:15px;
+	margin:55px auto;
+	}
+    .circle {
+        width:15px; 
+        height:15px;
+        border-radius:50%;
+        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        border-right: 2px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        border-left: 2px solid #848484;
+        -webkit-animation: circle 1s infinite linear;
+        animation: circle 1s infinite linear;
+        }
+    
+    @-webkit-keyframes circle { 
+        100% { -webkit-transform: rotate(360deg); } }
+    @keyframes circle { 
+        100% { transform: rotate(360deg); transform:rotate(360deg); } }
+

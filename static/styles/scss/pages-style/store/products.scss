@@ -1,0 +1,21 @@
+.item-container {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+    /* align-self: center; */
+}
+
+.feautes-item {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+.space-features {
+    margin: 2px
+}

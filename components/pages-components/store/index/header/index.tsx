@@ -1,0 +1,1 @@
+// import '../../../../../static/styles/scss/pages-style/store/index/header/index.scss'

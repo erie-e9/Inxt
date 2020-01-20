@@ -1,0 +1,18 @@
+@import 
+    '../../../../variables.scss'
+    ,'head.scss'
+    ,'section-content.scss'
+    ,'subsection/index.scss'
+        ;
+        // ,'./node_modules/slick-carousel/slick/slick.css'
+        // ,'./node_modules/slick-carousel/slick/slick-theme.css';
+
+        
+.section-slidertext {
+    font-family: $FONTFAMILY;
+    color: $PRIMARYTEXT;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.5;
+}

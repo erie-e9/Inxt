@@ -73,11 +73,39 @@ app.prepare().then(() => {
   // `/about` -> Render about.js
   // @ts-ignore
   server.on("request", (req, res) => {
-    const parsedUrl = parse(req.url, true);
+    const parsedUrl: any = parse(req.url, true);
     const { pathname, query } = parsedUrl;
     switch (pathname) {
+      case "/":
+        return app.render(req, res, "/", query);
+        break;
+      case "/store":
+          return app.render(req, res, "/store", query);
+          break;
+      case "/blog":
+          return app.render(req, res, "/blog", query);
+          break;
       case "/about":
         return app.render(req, res, "/about", query);
+        break;
+      case "/auth":
+        return app.render(req, res, "/auth", query);
+        break;
+      case "/contact":
+        return app.render(req, res, "/contact", query);
+        break;
+      case "private/dashboard":
+        return app.render(req, res, "private/dashboard", query);
+        break;
+      case "/apps":
+        return app.render(req, res, "/apps", query);
+        break;
+      case "/products":
+        return app.render(req, res, "private/ecommerce/products", query);
+        break;
+      case "/documents":
+        return app.render(req, res, "private/documents", query);
+        break;
       case "/robots.txt":
         return sendFile(res.stream, path.join(__dirname, "../static/robots.txt"));
         break;

@@ -1,0 +1,280 @@
+@import '../../../../../variables.scss';
+
+.subsection-head {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    margin-bottom: 10px;
+}
+
+.subsection-head-left {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subsection-head-right {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.card-section1 {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    // box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    width: 180px;
+    height: 310px;
+    // margin: auto 3px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    // border: $PRIMARY 1px solid; //! PRIMARY
+    border: rgba(245, 245, 245, 1) 1px solid; //! PRIMARY
+    
+    .card-info {
+        width: 100%;
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 0px;
+        position: relative;
+        text-align: center;
+        z-index: 100;
+    }
+
+    &:hover {
+        cursor: pointer;
+        // .top {           
+        //     transform: scale(1.03); 
+        // }
+    }
+}
+
+.animate {
+    transition: 0.4s cubic-bezier(0.3, 0, 0, 1)
+}
+
+.card-subsection1-margin {
+    margin: auto 4px auto 0;
+}
+
+.card-subsection2-margin {
+    margin: auto 5px;
+}
+
+.card-top {
+    width: 100%;
+    height: 60%;
+    // background: rgba(255, 0, 0, 0.2);
+
+    ::after {
+        content: '';
+        width: 100%;
+        // border-bottom: solid 0.5px rgb(230, 230, 230);
+        border-bottom: solid 0.7px rgb(230, 230, 230);
+        position: absolute;
+        left: 0;
+        top: 180px;
+        z-index: 2;
+    }
+}
+
+.card-bottom {
+    width: 100%;
+    height: 40%;
+
+    // ::before {
+    //     content: '';
+    //     width: 100%;
+    //     // border-bottom: solid 0.5px rgb(230, 230, 230);
+    //     border-bottom: solid 1.5px rgb(0, 255, 0);
+    //     position: absolute;
+    //     left: 0;
+    //     // top: 0px;
+    //     // top: 180px;
+    //     z-index: 1;
+    // }
+}
+
+.card-container {
+    padding: 5px 15px 0 15px;
+}
+
+.header-card {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
+
+.price-contaner {
+    display: inline-flex;
+    align-items: center;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    // font-variant: oldstyle-nums;
+    font-kerning: auto;
+    margin: 0;
+}
+
+.original-price {
+    display: inline-flex;
+    color: rgb(110, 110, 110);
+
+    del > span {
+        color: rgb(173, 173, 173);
+        font-size: .8rem;
+    }
+}
+
+.counter-container {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    height: 4.5px;  /* Can be anything */
+    width: 100%;
+	position: relative;
+	// -moz-border-radius: 25px;
+	// -webkit-border-radius: 25px;
+	// border-radius: 25px;
+	// padding: 10px;
+	// box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    // border: #e2e2e2 0.5px solid;
+    background-color: #eee;
+}
+
+.counter-text {
+    font-size: 0.65rem !important;
+    color: #464646 !important;
+    margin: 0px 0 0 10px !important;
+    font-weight: 500 !important;
+}
+
+.counter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+// .counter > span:after {
+//     content: "";
+//     position: absolute;
+//     top: 0; left: 0; bottom: 0; right: 0;
+//     background-image: linear-gradient(
+//       -45deg, 
+//       rgba(255, 255, 255, .2) 25%, 
+//       transparent 25%, 
+//       transparent 50%, 
+//       rgba(255, 255, 255, .2) 50%, 
+//       rgba(255, 255, 255, .2) 75%, 
+//       transparent 75%, 
+//       transparent
+//     );
+//     z-index: 1;
+//     background-size: 50px 50px;
+//     animation: move 2s linear infinite;
+//     border-top-right-radius: 8px;
+//     border-bottom-right-radius: 8px;
+//     border-top-left-radius: 20px;
+//     border-bottom-left-radius: 20px;
+//     overflow: hidden;
+//   }
+
+.item-container-header {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-icon {
+    top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.item-icon-left {
+    left: 10px;
+}
+
+.item-icon-right {
+    right :10px;
+}
+
+.tag {
+	display: inline-block;
+    width: auto;
+	height: 20px;
+	background-color: #d00000;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	border-left: 1px solid #d00000;
+	/* This makes room for the triangle */
+	margin-left: 10px;
+	position: relative;
+	color: white;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 5px 0 5px;
+}
+
+
+/* Makes the triangle */
+.tag:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -9px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #d00000;
+}
+
+/* Makes the circle */
+.tag:after {
+	content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: -4px;
+    top: 8px;
+}
